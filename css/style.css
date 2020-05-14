@@ -1,0 +1,275 @@
+/* acuvue-style.css */
+* {
+    margin: 0 auto;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    margin-left: -600px;
+    box-shadow: 0px 2px 2px #888;
+}
+
+header h1 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+
+}
+
+header h2 {
+    float: right;
+    margin-right: 20px;
+    line-height: 100px;
+
+}
+
+header h1 img {
+    width: 200px;
+}
+
+header h2 a {
+    text-decoration: none;
+    color: #003c7a;
+}
+
+#section1 {
+    width: 1200px;
+}
+
+#section2 {
+    width: 1200px;
+    height: 2531px;
+    background-image: url("../images/main02.jpg");
+}
+
+#section2 .check_list {
+    padding-top: 997px;
+}
+
+#section2 .box {
+    top: 996px;
+    /* outline: 1px solid red; */
+    width: 386.66px;
+    height: 404px;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    
+}
+
+#section2 .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/* **체크박스 라이브러리 사용하여 수정** */
+
+.check_list input[type=checkbox] { display: none!important;}
+.check_list label{
+  /* outline: 1px solid green; */
+  margin-top: 336px;
+  display: inline-block;
+  width: 40px; height:40px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+}
+
+.check_list label.checked{
+  width: 40px; height: 40px;
+  background-image: url('../images/checked.png');
+}
+
+
+
+#section2 button {
+    /* outline: 1px solid pink; */
+    font-size: 30px;
+    margin-top: 51px;
+    width: 386.66px;
+    height: 68px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #000;
+
+    /* 가운데로 옮기기.. */
+    margin-left: 407px;
+}
+
+/* 검사결과 팝업창 */
+#result_pop-up {
+    width: 800px;
+    height: 790px;
+    background: #fff;
+    position: absolute;
+    position: fixed;
+    left: 26%;
+    top: 10%;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.521);
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    border: 1px solid #ccc;
+    /* margin-left: 50%; */
+    /* left: -600px; */
+}
+#result_pop-up .scroll_wrap {
+    width: 800px;
+    height: 760px;
+    overflow: scroll;
+}
+
+
+#result_pop-up h1 {
+    font-size: 72px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+
+#result_pop-up h2 {
+    font-size: 48px;
+    padding-bottom: 34px;
+    color: #f66402;
+}
+
+#result_pop-up h2 span {
+    text-decoration: underline;
+}
+
+#result_pop-up h3 {
+    font-size: 30px;
+    padding-bottom: 157px;
+}
+
+#result_pop-up p {
+    font-size: 18px;
+    padding-bottom: 49px;
+}
+
+#result_pop-up img {
+    /* width: 488px; */
+    width: 300px;
+    /* height: 120px; */
+}
+ /* x박스 */
+ #result_xbox {
+    float: right;
+    background: #fff;
+    margin: 1px;
+    font-weight: bolder;
+    color: #f66402;
+}
+#xbox-wrap{
+    width: 800px;
+    height: 20px;
+    background: #f66402;
+}
+
+
+#section3 {
+    width: 1200px;
+}
+
+#section3 div h3 {
+    width: 1200px;
+    height: 88px;
+    line-height: 88px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.product .image-box {
+
+    /* outline: 1px solid blue; */
+    width: 386.66px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.product .image-box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product .image-box:last-child {
+    margin-bottom: 50px;
+}
+
+#section4 {
+    clear: both;
+    width: 800px;
+    background: #ccc;
+    /* position: fixed; */
+    margin-bottom: 100px;
+}
+
+#section4 h1 {
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #003c7a;
+    color: #fff;
+}
+
+#section4 h1:hover {
+    background: orange;
+}
+
+#section4 #wrap {
+    background: #246db6;
+}
+
+#section4 #wrap ul li {
+    /* outline: 1px solid red; */
+    width: 500px;
+    /* background: rgba(255, 255, 255, 0.87); */
+    /* border-radius: 10px; */
+    /* width: 800px; */
+    padding: 10px;
+    list-style-type: none;
+    color: #fff;
+}
+
+.adress-wrap {
+    /* outline: 1px solid red; */
+    width: 400px;
+
+}
+
+#section4 #apply {
+    /* outline: 1px solid orange; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #003c7a;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.521);
+    margin-left: 45%;
+
+}
+
+#section4 #apply:hover {
+    background: #88D5E9;
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}

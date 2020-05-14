@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acuvue</title>
+    <!-- 나눔명조 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- jQuery와 Postcodify를 로딩한다 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+    <!-- 체크박스를 위한 라이브러리 -->
+    <script src="./js/csslick_check.js"></script>
+    <!-- <link rel="stylesheet" href="./csslick_check/csslick_check.css"> -->
+
+    <!-- 외부스타일 -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="https://www.acuvue.co.kr/"><img src="./images/logo.png" alt=""></a>
+        </h1>
+        <div>
+            <h2><a href="#section4">아큐브 시험착용렌즈 신청하기</a></h2>
+        </div>
+    </header>
+
+    <section id="section1">
+        <img src="./images/main01.jpg" alt="메인1">
+    </section>
+
+    <section id="section2">
+        <!-- 배경은 css로 넣음 -->
+        <div class="check_list">
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style01">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style02">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style03">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style04">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style05">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style06">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style07">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style08">
+            </div>
+
+            <div class="box">
+                <label for="">check</label>
+                <input type="checkbox" name="life-style09">
+            </div>            
+        </div>
+
+        <a href="#"></a><button id="btn-result">검사결과 확안하기</button></a>
+    </section>
+
+    <section id="section3">
+        <img src="./images/main03.jpg" alt="">
+        <div>
+            <h3>이미지클릭시 상세정보로 이동합니다.</h3>
+        </div>
+        <div class="product">
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/acuvue-moist-1-day">
+                    <img src="./images/image01.jpg" alt="원데이 아큐브 모이스트">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/acuvue-trueye-1-day">
+                    <img src="./images/image02.jpg" alt="원데이 아큐브 트루아이">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/acuvue-oasys-1-day">
+                    <img src="./images/image03.jpg" alt="아큐브 오아시스 원데이">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/acuvue-vita">
+                    <img src="./images/image04.jpg" alt="아큐브 비타">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/vita-astigmatism">
+                    <img src="./images/image05.jpg" alt="아큐브 비타 난시용">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/acuvue-1-oasys-astigmatism">
+                    <img src="./images/image06.jpg" alt="아큐브 오아시스 원데이 난시용">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="#">
+                    <img src="./images/image07.jpg" alt="아큐브 오아시스 트래지션스">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/acuvue-define-1-day">
+                    <img src="./images/image08.jpg" alt="원데이 아큐브 디파인">
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="https://www.acuvue.co.kr/contact-lenses/acuvue-2define">
+                    <img src="./images/image09.jpg" alt="아큐브2디파인">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <h1>무료신청하기</h1>
+
+        <div id="wrap">
+
+            <ul>
+                <li>
+                    <h3>성명: <input type="text" size="6"></h3>
+                </li>
+                <li>
+                    <!-- 체크란 만들기 -->
+                    <form action="">
+                        <h3>
+                            성별:
+                            <input type="radio" name="sex"> 남자
+                            &nbsp;
+                            <input type="radio" name="sex"> 여자
+                        </h3>
+                    </form>
+                </li>
+                <li>
+                    <h3>
+                        전화번호:
+                        <input type="call_no_1" maxlength="3" size="3"> -
+                        <input type="call_no_2" maxlength="4" size="4"> -
+                        <input type="call_no_3" maxlength="4" size="4">
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        휴대번호:
+                        <input type="hp_no_1" maxlength="3" size="3"> -
+                        <input type="hp_no_2" maxlength="4" size="4"> -
+                        <input type="hp_no_3" maxlength="4" size="4">
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        받아보실주소:
+                    </h3>
+                    <div class="address-wrap">
+                        <p>
+                            우편번호 &nbsp;&nbsp;&nbsp;<input type="text" name="" class="postcodify_postcode5" value="">
+                            <button id="postcodify_search_button">검색</button><br>
+                            도로명주소 <input type="text" name="" id="" class="postcodify_address" value=""><br>
+                            상세주소 &nbsp;&nbsp;&nbsp;<input type="text" name="" id="" class="postcodify_details"
+                                value=""><br>
+                            기타항목 &nbsp;&nbsp;&nbsp;<input type="text" name="" id="" class="postcodify_eatra_info"
+                                value=""><br>
+                        </p>
+
+                    </div>
+
+                </li>
+                <li>
+                    <h3>
+                        받아보실 제품:
+                        <select name="product" id="">
+                            <optgroup label="난시제품">
+                                <option value="">모이스트토릭</option>
+                                <option value="">오아시스토릭</option>
+                                <option value="">비타토릭</option>
+                            </optgroup>
+
+                            <optgroup label="원데이">
+                                <option value="">원데이모이스트</option>
+                                <option value="">원데이오아시스</option>
+                                <option value="">트루아이</option>
+                                <option value="">모이스트 멀티포컬</option>
+                            </optgroup>
+
+                            <optgroup label="2주">
+                                <option value="">2주오아시스</option>
+                                <option value="">오아시스 트랜지션스</option>
+                            </optgroup>
+
+                            <optgroup label="한달">
+                                <option value="">아큐브 비타</option>
+                            </optgroup>
+
+                            <optgroup label="디파인(원데이)">
+                                <option value="">엑센트</option>
+                                <option value="">네추럴 샤인</option>
+                                <option value="">비비드</option>
+                                <option value="">레디언트 브라이트</option>
+                                <option value="">레디언트 스윗</option>
+                                <option value="">레디언트 시크</option>
+                                <option value="">레디언트 차밍</option>
+                                <option value="">2주 디파인</option>
+                            </optgroup>
+                        </select>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        도수(left/right):
+                        L <select name="도수" id="">
+                            <optgroup label="근시">
+                                <option value="">-0.25</option>
+                                <option value="">-0.50</option>
+                                <option value="">-0.75</option>
+                                <option value="">-1.00</option>
+                                <option value="">-1.25</option>
+                                <option value="">-1.50</option>
+                                <option value="">-1.75</option>
+                                <option value="">-2.00</option>
+                                <option value="">-2.25</option>
+                                <option value="">-2.50</option>
+                                <option value="">-2.75</option>
+                                <option value="">-3.00</option>
+                                <option value="">-3.25</option>
+                                <option value="">-3.50</option>
+                                <option value="">-3.75</option>
+                                <option value="">-4.00</option>
+                                <option value="">-4.25</option>
+                                <option value="">-4.50</option>
+                                <option value="">-4.75</option>
+                                <option value="">-5.00</option>
+                                <option value="">-5.25</option>
+                                <option value="">-5.75</option>
+                                <option value="">-6.00</option>
+                                <option value="">-6.50</option>
+                                <option value="">-7.00</option>
+                                <option value="">-7.50</option>
+                                <option value="">-8.00</option>
+                                <option value="">-8.50</option>
+                                <option value="">-9.00</option>
+                                <option value="">-9.50</option>
+                                <option value="">-10.00</option>
+                                <option value="">-10.50</option>
+                                <option value="">-11.00</option>
+                                <option value="">-11.50</option>
+                                <option value="">-12.00</option>
+                            </optgroup>
+
+                            <optgroup label="원시">
+                                <option value="">+0.25</option>
+                                <option value="">+0.50</option>
+                                <option value="">+0.75</option>
+                                <option value="">+1.00</option>
+                                <option value="">+1.25</option>
+                                <option value="">+1.50</option>
+                                <option value="">+1.75</option>
+                                <option value="">+2.00</option>
+                                <option value="">+2.25</option>
+                                <option value="">+2.50</option>
+                                <option value="">+2.75</option>
+                                <option value="">+3.00</option>
+                                <option value="">+3.25</option>
+                                <option value="">+3.50</option>
+                                <option value="">+3.75</option>
+                                <option value="">+4.00</option>
+                                <option value="">+4.25</option>
+                                <option value="">+4.50</option>
+                                <option value="">+4.75</option>
+                                <option value="">+5.00</option>
+                                <option value="">+5.25</option>
+                                <option value="">+5.75</option>
+                                <option value="">+6.00</option>
+                                <option value="">+6.50</option>
+                                <option value="">+7.00</option>
+                                <option value="">+7.50</option>
+                                <option value="">+8.00</option>
+                                <option value="">+8.50</option>
+                                <option value="">+9.00</option>
+                                <option value="">+9.50</option>
+                                <option value="">+10.00</option>
+                                <option value="">+10.50</option>
+                                <option value="">+11.00</option>
+                                <option value="">+11.50</option>
+                                <option value="">+12.00</option>
+                            </optgroup>
+                        </select>
+                        R <select name="도수" id="">
+                            <optgroup label="근시">
+                                <option value="">-0.25</option>
+                                <option value="">-0.50</option>
+                                <option value="">-0.75</option>
+                                <option value="">-1.00</option>
+                                <option value="">-1.25</option>
+                                <option value="">-1.50</option>
+                                <option value="">-1.75</option>
+                                <option value="">-2.00</option>
+                                <option value="">-2.25</option>
+                                <option value="">-2.50</option>
+                                <option value="">-2.75</option>
+                                <option value="">-3.00</option>
+                                <option value="">-3.25</option>
+                                <option value="">-3.50</option>
+                                <option value="">-3.75</option>
+                                <option value="">-4.00</option>
+                                <option value="">-4.25</option>
+                                <option value="">-4.50</option>
+                                <option value="">-4.75</option>
+                                <option value="">-5.00</option>
+                                <option value="">-5.25</option>
+                                <option value="">-5.75</option>
+                                <option value="">-6.00</option>
+                                <option value="">-6.50</option>
+                                <option value="">-7.00</option>
+                                <option value="">-7.50</option>
+                                <option value="">-8.00</option>
+                                <option value="">-8.50</option>
+                                <option value="">-9.00</option>
+                                <option value="">-9.50</option>
+                                <option value="">-10.00</option>
+                                <option value="">-10.50</option>
+                                <option value="">-11.00</option>
+                                <option value="">-11.50</option>
+                                <option value="">-12.00</option>
+                            </optgroup>
+
+                            <optgroup label="원시">
+                                <option value="">+0.25</option>
+                                <option value="">+0.50</option>
+                                <option value="">+0.75</option>
+                                <option value="">+1.00</option>
+                                <option value="">+1.25</option>
+                                <option value="">+1.50</option>
+                                <option value="">+1.75</option>
+                                <option value="">+2.00</option>
+                                <option value="">+2.25</option>
+                                <option value="">+2.50</option>
+                                <option value="">+2.75</option>
+                                <option value="">+3.00</option>
+                                <option value="">+3.25</option>
+                                <option value="">+3.50</option>
+                                <option value="">+3.75</option>
+                                <option value="">+4.00</option>
+                                <option value="">+4.25</option>
+                                <option value="">+4.50</option>
+                                <option value="">+4.75</option>
+                                <option value="">+5.00</option>
+                                <option value="">+5.25</option>
+                                <option value="">+5.75</option>
+                                <option value="">+6.00</option>
+                                <option value="">+6.50</option>
+                                <option value="">+7.00</option>
+                                <option value="">+7.50</option>
+                                <option value="">+8.00</option>
+                                <option value="">+8.50</option>
+                                <option value="">+9.00</option>
+                                <option value="">+9.50</option>
+                                <option value="">+10.00</option>
+                                <option value="">+10.50</option>
+                                <option value="">+11.00</option>
+                                <option value="">+11.50</option>
+                                <option value="">+12.00</option>
+                            </optgroup>
+                        </select>
+                    </h3>
+                </li>
+            </ul>
+            <button id="apply">신청</button>
+        </div>
+
+    </section>
+    
+
+    <!-- 검사결과 확인하기 팝업창 -->
+    <div id="result_pop-up">
+        <div id="xbox-wrap"><button id="result_xbox">X</button></div>
+        <div class="scroll_wrap">
+            <h1>죄송합니다.고객님</h1>
+            <h2>"선택하신 서비스는<br><span>4월말 종료된</span>서비스 입니다."</h2>
+            <h3>무료시험착용 렌즈 신청은 기존과 동일하오니<br>페이지 하단에서 이용 부탁드립니다.</h3>
+            <p>더 풍성한 이벤트로 다시 돌아오겠습니다</p>
+            <img src="./images/logo.png" alt="로고">
+        </div>
+    </div>
+    <!-- "검색" 단추를 누르면 팝업 레이어가 열리도록 설정한다 -->
+    <script>
+        $(function () { $("#postcodify_search_button").postcodifyPopUp(); }); 
+    </script>
+
+    <!-- 슬라이딩 -->
+    <script>
+        $(function () {
+            // 초기화 (닫힌 상태)
+            $('#wrap').hide();
+            // 열기
+            // 전체목록 열기
+            $('#section4 > h1').click(function () {
+                $('#wrap').slideToggle();
+            })
+        })
+    </script>
+
+    <!-- 라이프스타일 팝업창 -->
+    <script>
+        $(function(){
+            // 초기화 닫기
+            $('#result_pop-up').hide();
+            // 버튼 클릭시 보이기
+            $('#btn-result').click(function(){
+                $('#result_pop-up').show();
+            })
+            // x 버튼 클릭시 닫기
+            $('#result_xbox').click(function(){
+                $('#result_pop-up').hide();
+            })
+        });
+    </script>
+
+    <!-- 체크박스 스타일 -->
+    <script>
+
+        $(function () {
+          // 옵션
+          csslick_check({
+            el: ".check_list",  // 변경불가
+            color: "white",     // 색상
+          });
+  
+        });
+  
+      </script>
+
+
+</body>
+
+</html>
